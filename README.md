@@ -109,10 +109,13 @@ Querying if any months influence growth in games and what month is the most sell
 ## 04 —FINDINGS
 QUESTION 1
 
-<img width="997" height="796" alt="image" src="https://github.com/user-attachments/assets/bfe59461-4a1e-442d-a294-7637108f2a72" />
+<img width="1082" height="760" alt="image" src="https://github.com/user-attachments/assets/17fd98d0-56fb-4043-84ab-88c496f803a2" />
 
 
-Finding...
+Indie games generally have smaller team and budgets, AA games Occupy a mid budget postion while AAA games involve larger teams and higher investment.
+
+AAA games account for 74% of total copies sold followed by AA at 18% and indie at 8% however the limited number of AA titles may affect the reliability of comparinsions. Using the median is important because a small number of blockbuster games can inflate the average sales a which can distort comparinsons, comparing the median of copies sold provides a clerer insight to the typical performance across all game type. This helps determine  whether AAAs dominance in total sales is reflected in the performance of individual games or driven by a few exceptionally successful releases.
+
 
 QUESTION 2
 
