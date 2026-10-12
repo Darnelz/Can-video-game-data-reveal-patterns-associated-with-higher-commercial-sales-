@@ -107,9 +107,10 @@ Querying if any months influence growth in games and what month is the most sell
 
 
 ## 04 —FINDINGS
-QUESTION 1
+Q1: How does commercial performance differ between Indie, AA and AAA games?
 
-<img width="1082" height="760" alt="image" src="https://github.com/user-attachments/assets/17fd98d0-56fb-4043-84ab-88c496f803a2" />
+<img width="1173" height="783" alt="Screenshot 2026-10-12 125031" src="https://github.com/user-attachments/assets/e904e837-567d-4048-8c27-3a3a9b1a6dc8" />
+
 
 
 Indie games generally have smaller team and budgets, AA games Occupy a mid budget postion while AAA games involve larger teams and higher investment.
