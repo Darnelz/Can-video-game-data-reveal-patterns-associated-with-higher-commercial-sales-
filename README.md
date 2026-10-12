@@ -125,6 +125,10 @@ QUESTION 2
 
 Shooters, Action and Platformers Lead commercial sales, This suggests that these genres attract a strong consumer demand. Established franchises such as Battlefield and Metroid may benefit from loyal fanbases and brand recognition, encouraging repeat purchases 
 
+<img width="1532" height="598" alt="image" src="https://github.com/user-attachments/assets/4c707056-783e-4020-abb3-3d69092f8fb7" />
+
+
+
 QUESTION 3
 
 <img width="993" height="799" alt="image" src="https://github.com/user-attachments/assets/10cba4fb-7b2c-45b5-be3a-31695543a2dc" />
