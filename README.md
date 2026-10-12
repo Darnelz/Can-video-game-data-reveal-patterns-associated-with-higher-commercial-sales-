@@ -127,7 +127,7 @@ Shooters, Action and Platformers Lead commercial sales, This suggests that these
 
 <img width="1532" height="598" alt="image" src="https://github.com/user-attachments/assets/4c707056-783e-4020-abb3-3d69092f8fb7" />
 
-
+Looking deeper, Card games are recorded as the highest average sales at 5.3 million copies; however this figure reflects just one game making it less representative of the genre overall. Platformers provide a more balanced insight with sales across AAA, AA and indie titles. This suggests that comercial oppurtunites exist across different development budgets making Platformers a potentially attractive genre for smaller studios seeking to compete without AAA-level investment
 
 QUESTION 3
 
