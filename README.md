@@ -129,14 +129,16 @@ QUESTION 3
 Finding...
 
 
-QUESTION 4
+Q4: Does game price affect how many copies are sold? 
 
-<img width="1051" height="1021" alt="image" src="https://github.com/user-attachments/assets/e3e1c18c-5d7f-4bb2-ab32-bcf72d82477a" />
-
-
-Finding...
+<img width="979" height="788" alt="Screenshot 2026-10-12 115607" src="https://github.com/user-attachments/assets/bf628279-165d-448e-86fd-91a39e803a9c" />
 
 
+The following Scatterplot follows the relationship between copies sold and the cost of the games. The results suggest that the relationship between cost and commercial sales varies across categories offering insights into investment oppurtunity and potential risks. 
+
+AAA games show a postivie relationship between  cost and copies sold , with some titles achieveing exceptionally high sales however high investment does not guarentee comercial success in comparison to indie games where they show a gradual increase with some lower cost titles achieve sales as high or higher than some AAA games. This highlights the fact that smaller budget games can reach substantial audiences without requiring a same level of investment in comparinson to AAA titles. In contrast AA games display a negative trend suggesting that higher costs associated with lower sales within this dataset although further investigation is needed to establish  whether this pattern is meaningful.
+
+These findings highlight potential investment oppurtunities across different categories. Publishers could balance AAA titles with lower cost indie projects as that is substantial for a wider audience, particually to players who are more price concious and may be less willing to purchase expensive releases. Investing in a broader range of afforable games could help not only expand your audience but generate more copies in the long run.
 
 QUESTION 5
 
