@@ -1,7 +1,7 @@
-# What factors are associated with the commercial success of video games 
+# Can video game data reveal patterns associated with higher commercial sales?
 
 ## Project Overview
-The project is focused on creating and analysing a dataset of games which was published from August 2025 - August 2026; Specifically on what factors drove the success of video games, I will compare and evaluate and finally conclude what drives success due to the findings I have encountered within the past year.
+The project is focused on creating and analysing a dataset of games which was published from August 2025 - August 2026; Specifically on what factors patterns drove higher commercial sales, I will compare and evaluate and finally conclude what drives success due to the findings I have encountered within the past year.
 
 ### The workflow will be the following:
 
