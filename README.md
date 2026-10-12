@@ -129,8 +129,8 @@ QUESTION 3
 
 <img width="993" height="799" alt="image" src="https://github.com/user-attachments/assets/10cba4fb-7b2c-45b5-be3a-31695543a2dc" />
 
+The games in the High-Mid rating range is recorded the highest total sales, peaking at approxmiately 320 million copies, while the highest rated games generated considerably ferwer sales; This suggests that higher ratings do not necessarily translate to higher sales, although positively rated games may still benefit from strong consumer confidence and purchasing interest.
 
-Finding...
 
 
 Q4: Does game price affect how many copies are sold? 
