@@ -1,7 +1,10 @@
 # Can video game data reveal patterns associated with higher commercial sales?
 
 ## Project Overview
-The project is focused on creating and analysing a dataset of games which was published from August 2025 - August 2026; Specifically on what factors patterns drove higher commercial sales, I will compare and evaluate and finally conclude what drives success due to the findings I have encountered within the past year.
+The project is focused on creating and analysing a dataset of games which was published from August 2025 - August 2026; Specifically on what factors patterns
+
+
+drove higher commercial sales, I will compare and evaluate and finally conclude what drives success due to the findings I have encountered within the past year.
 
 ### The workflow will be the following:
 
@@ -76,9 +79,7 @@ I had to clean and replace typos before engaging within my queries
 
 ## Q1: How does commercial performance differ between Indie, AA and AAA games? 
 
- 
-My hope is to 
-Compare Indie, AA and AA by its copies sold, revenue and rating and see what drove
+
 ```sql
 --MEDIAN OF COPIES SOLD AAA
 
@@ -125,8 +126,6 @@ I had to first double check the data to see if it was still messy and noticed ag
 
 
 ### Q2: Which genres sell the most copies?  
-The aim was to compare the total sales or average/median sales for each genre. 
-
 
 ```sql
 
@@ -316,7 +315,7 @@ The relationship I was trying to figure out was if higher ratings relate to high
 
 
 ### Q4: Does game price affect how many copies are sold? 
-Querying whether there is a relationship between game price and copies sold?
+
 
 ```sql
 
