@@ -67,7 +67,9 @@ Compare Indie, AA and AA by its copies sold, revenue and rating and see what dro
 
 <img width="638" height="680" alt="image" src="https://github.com/user-attachments/assets/fd0c8bd5-57d1-4333-9e91-3040d02b4af5" />
 
-
+```
+Hey this is test
+```
 
 ### Q2: Which genres sell the most copies?  
 The aim was to compare the total sales or average/median sales for each genre. 
