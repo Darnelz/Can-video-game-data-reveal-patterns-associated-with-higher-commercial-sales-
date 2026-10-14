@@ -58,7 +58,7 @@ I added Copies sold, Revenue and release date in the new data for more comparins
 
 ## 03 - SQL Analysis
 The Goal here is to Answer the question in form of SQL, underneath is the following which helped me calculate  how I figured out the question (bru idk)
-
+---
 
 
 Before hand I noticed there were alot of anomalies when checking 
