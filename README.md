@@ -58,7 +58,7 @@ I added Copies sold, Revenue and release date in the new data for more comparins
 
 ## 03 - SQL Analysis
 The Goal here is to Answer the question in form of SQL, underneath is the following which helped me calculate  how I figured out the question (bru idk)
----
+
 
 
 Before hand I noticed there were alot of anomalies when checking 
@@ -66,6 +66,11 @@ Before hand I noticed there were alot of anomalies when checking
 SELECT Distinct "Genre" from "AllGames"
 ```
 I had to clean and replace typos before engaging within my queries
+
+
+---
+
+
 
 ## Q1: How does commercial performance differ between Indie, AA and AAA games? 
 
@@ -112,6 +117,8 @@ ORDER BY "Revenue"
 | Sonic Crossworlds | 4.65 | Racing | 1200000 | 32444500 |  64.99  |  AAA  | 2025-09-25 | PS4, PS5, Xbox, Switch 1, Switch 2, PC |
 
 
+
+---
 
 
 ### Q2: Which genres sell the most copies?  
@@ -163,7 +170,7 @@ Group by "Genre"
 
 </details>
 
-
+---
 
 ### Q3: Does a game's rating relate to its commercial performance? 
 
@@ -209,6 +216,8 @@ LIMIT 10
 | 4.70 | 1 | Indie | 2,648,940 | 106,000 | 1,434,100 | 133,552,651 |
 
 </details>
+
+---
 
 
 ### Q4: Does game price affect how many copies are sold? 
@@ -334,7 +343,7 @@ ORDER BY "Rating" DESC
 
 </details>
 
-
+---
 
 ### Q5: Does a game's release period relate to its commercial performance? 
 
