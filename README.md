@@ -161,7 +161,7 @@ Group by "Genre"
 | Simulation | 9 | 50,100,114,403 | 5,566,679,378.11 |
 | Casual | 8 | 170,043,150 | 21,255,393.75 |
 
-<details>
+</details>
 
 
 
@@ -356,7 +356,6 @@ ORDER BY MONTH ASC
 ```
 
 
-### Commercial Performance by Rating Group
 
 | Rating_Group | Total_Revenue | Total_Copies_Sold | Game_Count |
 |---:|---:|---:|---:|
