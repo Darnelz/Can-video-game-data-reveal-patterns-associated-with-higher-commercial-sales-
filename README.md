@@ -59,14 +59,19 @@ I added Copies sold, Revenue and release date in the new data for more comparins
 ## 03 - SQL Analysis
 The Goal here is to Answer the question in form of SQL, underneath is the following which helped me calculate  how I figured out the question (bru idk)
 
+
+
+Before hand I noticed there were alot of anomalies when checking 
+```sql
+SELECT Distinct "Genre" from "AllGames"
+```
+I had to clean and replace typos before engaging within my queries
+
 ### Q1: How does commercial performance differ between Indie, AA and AAA games? 
 
  
 My hope is to 
 Compare Indie, AA and AA by its copies sold, revenue and rating and see what drove
-
-
-
 ```sql
 --MEDIAN OF COPIES SOLD AAA
 
@@ -81,8 +86,6 @@ FROM "AllGames"
 SELECT * FROM "AllGames"
 WHERE abs("CopiesASC" - "CopiesDESC") <= 1
 ORDER BY "Copies Sold"
-
-
 
 
 
@@ -107,16 +110,49 @@ ORDER BY "Revenue"
 The aim was to compare the total sales or average/median sales for each genre. 
 
 
+```sql
 
-<img width="342" height="236" alt="image" src="https://github.com/user-attachments/assets/7a3b3bd5-8d2c-458f-9b55-c708386f30d3" />
+SELECT 
+MAX ("Genre") as "Genre",
+COUNT("Genre") as "TotalGameGenre",
+SUM("Revenue") as "Total_Revenue",
+Avg("Revenue") as "Average"
+from "AllGames"
+Group by "Genre"
 
+```
 
 
 
 ### Q3: Does a game's rating relate to its commercial performance? 
 Rating → Copies Sold + Revenue 
 
-<img width="616" height="699" alt="image" src="https://github.com/user-attachments/assets/09d743ad-6d16-4e8a-8843-4b110e5898d6" />
+```sql
+
+-- Getting Rating, Copies Sold and Rev
+
+SELECT 
+"Rating",
+"Game Type",
+"Copies Sold",
+"Revenue"
+From "AllGames"
+Order by "Rating" DESC
+
+
+-- Grouping Top 10 Ratings 
+CREATE TABLE "Rating_Info" AS (
+Select "Rating", "Group_Number", "Game Type", "Revenue", "Copies Sold",
+Sum("Copies Sold") OVER(PARTITION BY "Group_Number" ) AS "Rate_Copies",
+Sum("Revenue") OVER(PARTITION BY "Group_Number" ) AS "Rate_Rev"
+
+FROM
+
+(SELECT "Rating", "Copies Sold", "Revenue", "Game Type", NTILE(10) OVER(ORDER BY "Rating" DESC) AS "Group_Number" FROM "AllGames")
+
+
+```
+
 
 
 
@@ -124,7 +160,17 @@ Rating → Copies Sold + Revenue
 ### Q4: Does game price affect how many copies are sold? 
 Querying whether there is a relationship between game price and copies sold?
 
-<img width="227" height="194" alt="image" src="https://github.com/user-attachments/assets/e58616dc-2c90-47ff-89c5-6238e149f1b6" />
+```sql
+
+SELECT 
+"Rating",
+"Genre",
+"Revenue",
+"Copies Sold"
+FROM "AllGames"
+ORDER BY "Rating" DESC
+
+```
 
 
 
@@ -134,7 +180,22 @@ Querying whether there is a relationship between game price and copies sold?
 
 Querying if any months influence growth in games and what month is the most selling (is there any trends?)
 
-<img width="418" height="296" alt="image" src="https://github.com/user-attachments/assets/168ea63c-29f3-49d1-9cb5-f54e942f7851" />
+```sql
+
+Select 
+
+EXTRACT(month from "Release Date") as Month,
+SUM("Revenue") AS "Total Revenue",
+SUM("Copies Sold") AS "Total Copies",
+COUNT("Game Type") AS "Number_Games"
+
+FROM "AllGames"
+Group by Month 
+ORDER BY MONTH ASC
+
+
+```
+
 
 
 → View SQL Queries
