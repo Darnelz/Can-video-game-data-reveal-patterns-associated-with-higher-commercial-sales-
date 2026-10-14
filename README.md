@@ -113,6 +113,7 @@ ORDER BY "Revenue"
 
 ```
 
+I had to first double check the data to see if it was still messy and noticed again once I done a COUNT check for game types it was 4 rather than 3, I soon noticed when further investigating that it was the difference between 'indie' and 'Indie'. Once finished I then wrote out a MEDIAN code which could be distplayed per game type I could do this then to notice what is the middle value of the Game Type before it gets turned into a pie chart
 
 | Game | Rating | Genre | Copies Sold | Revenue | The Cost | Game Type | Release Date | Platform | 
 |---|---|---|---|---|---|---|---|---|
