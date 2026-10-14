@@ -1,10 +1,7 @@
 # Can video game data reveal patterns associated with higher commercial sales?
 
 ## Project Overview
-The project is focused on creating and analysing a dataset of games which was published from August 2025 - August 2026; Specifically on what factors patterns
-
-
-drove higher commercial sales, I will compare and evaluate and finally conclude what drives success due to the findings I have encountered within the past year.
+The project is focused on creating and analysing a dataset of games which was published from August 2025 - August 2026; Specifically on what factors patterns drove higher commercial sales, I will compare and evaluate and finally conclude what drives success due to the findings I have encountered within the past year.
 
 ### The workflow will be the following:
 
@@ -26,6 +23,8 @@ CSV
 
 
 ## 01 - How the Data was Gathered
+
+
 The aim is to gather as much data as I can in terms of games as it would be more time consuming if I handpicked each 90+ games 
 
 <img width="470" height="414" alt="image" src="https://github.com/user-attachments/assets/cf69b9f3-845a-4249-b190-10d5f927293d" />
@@ -47,6 +46,8 @@ The sources I looked for games will be at the bottom of this page
 
 
 ## 02 - Cleaning the Data
+
+
 ### Old Data
 <img width="554" height="517" alt="image" src="https://github.com/user-attachments/assets/b7be138f-e807-4ed3-a62c-fa7f6e5f2df8" /> 
 ‎
@@ -62,6 +63,8 @@ I added Copies sold, Revenue and release date in the new data for more comparins
 
 
 ## 03 - SQL Analysis
+
+
 The Goal here is to Answer the question in form of SQL, underneath is the following which helped me calculate  how I figured out the question (bru idk)
 
 
@@ -127,6 +130,7 @@ I had to first double check the data to see if it was still messy and noticed ag
 
 ### Q2: Which genres sell the most copies?  
 
+
 ```sql
 
 SELECT 
@@ -177,6 +181,7 @@ This is a more noticeable easy query, only focusing on more aggregate functions 
 
 ### Q3: Does a game's rating relate to its commercial performance? 
 
+
 ```sql
 
 -- Getting Rating, Copies Sold and Rev
@@ -204,6 +209,7 @@ FROM
 ```
 
 The relationship I was trying to figure out was if higher ratings relate to higher copies sold, I wanted to group everything by its rating so then I can put in a table what rating gathers the most copies sold, by using a NTILES(10) to divide the amount of games I have in 10 roughly equal sized groups based on their ratings, while using  SUM() OVER (PARTITION BY "Group_Number") to calculate the total revenue and copies sold for each group while keeping individual game records visible for further comparison.
+
 
 <details>
 <summary>View Table Query</summary>
@@ -483,6 +489,8 @@ When extracting the Release date by month then Grouping and ordering the month b
 
 
 ## 04 —FINDINGS
+
+
 Q1: How does commercial performance differ between Indie, AA and AAA games?
 
 <img width="1173" height="783" alt="Screenshot 2026-10-12 125031" src="https://github.com/user-attachments/assets/e904e837-567d-4048-8c27-3a3a9b1a6dc8" />
@@ -496,12 +504,14 @@ AAA games account for 74% of total copies sold followed by AA at 18% and indie a
 
 QUESTION 2
 
+
 <img width="996" height="794" alt="image" src="https://github.com/user-attachments/assets/3f3bc226-2343-4687-9325-719687fa7bbb" />
 
 
 Shooters, Action and Platformers Lead commercial sales, This suggests that these genres attract a strong consumer demand. Established franchises such as Battlefield and Metroid may benefit from loyal fanbases and brand recognition, encouraging repeat purchases 
 
 <img width="1532" height="598" alt="image" src="https://github.com/user-attachments/assets/4c707056-783e-4020-abb3-3d69092f8fb7" />
+
 
 Looking deeper, Card games are recorded as the highest average sales at 5.3 million copies; however this figure reflects just one game making it less representative of the genre overall. Platformers provide a more balanced insight with sales across AAA, AA and indie titles. This suggests that comercial oppurtunites exist across different development budgets making Platformers a potentially attractive genre for smaller studios seeking to compete without AAA-level investment
 
@@ -515,6 +525,7 @@ The games in the High-Mid rating range is recorded as the highest total sales, p
 
 Q4: Does game price affect how many copies are sold? 
 
+
 <img width="979" height="788" alt="Screenshot 2026-10-12 115607" src="https://github.com/user-attachments/assets/bf628279-165d-448e-86fd-91a39e803a9c" />
 
 
@@ -522,10 +533,16 @@ The following Scatterplot follows the relationship between copies sold and the c
 
 AAA games show a postivie relationship between cost and copies sold, with some titles achieving exceptionally high sales however high investment does not guarentee comercial success in comparison to indie games where they show a gradual increase with some lower cost titles achieve sales as high or higher than some AAA games. This highlights the fact that smaller budget games can reach substantial audiences without requiring a same level of investment in comparinson to AAA titles. In contrast AA games display a negative trend suggesting that higher costs associated with lower sales within this dataset although further investigation is needed to establish  whether this pattern is meaningful.
 
+
 These findings highlight potential investment oppurtunities across different categories. Publishers could balance AAA titles with lower cost indie projects as that is substantial for a wider audience, particually to players who are more price concious and may be less willing to purchase expensive releases. Investing in a broader range of afforable games could help not only expand your audience but generate more copies in the long run.
+
 
 QUESTION 5
 
+
 <img width="992" height="801" alt="image" src="https://github.com/user-attachments/assets/17d77242-bd55-4775-914a-bb89a1baa897" />
 
-The findings suggest that release timing may be associated with commercial performance although patterns vary by game types.                                                                                                                                                                                                                                                                   Across the whole dataset, May and September show the most promising sales while October is recorded as the highest total sales, largely driven by one of the best selling AAA titles during this year which makes October a outlier rather than a reliable indicater of the the best release month. AAA titles performed strongly thoughout much of the year, AA titles peaked during May and Indie titles recorded their strongest sales in the later month represented within the data.                                                                                                                                                                                                                                                                                                Overall, May and September appear to be promising release windows. However due to seeing the rise in copies due to a best selling AAA game during October, Release timing alone cannot fully determine the commercial success such as factors such as Marketing, game quality and franchise recognition. A larger data set would determine whether these seasonal patters are consistent.
+The findings suggest that release timing may be associated with commercial performance although patterns vary by game types.                                                                                                                                                                                                  Across the whole dataset, May and September show the most promising sales while October is recorded as the highest total sales, largely driven by one of the best selling AAA titles during this year which makes October a outlier rather than a reliable indicater of the the best release month. AAA titles performed strongly thoughout much of the year, AA titles peaked during May and Indie titles recorded their strongest sales in the later month represented within the data.                          
+
+
+Overall, May and September appear to be promising release windows. However due to seeing the rise in copies due to a best selling AAA game during October, Release timing alone cannot fully determine the commercial success such as factors such as Marketing, game quality and franchise recognition. A larger data set would determine whether these seasonal patters are consistent.
