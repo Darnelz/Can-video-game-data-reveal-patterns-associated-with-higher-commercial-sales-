@@ -65,10 +65,42 @@ The Goal here is to Answer the question in form of SQL, underneath is the follow
 My hope is to 
 Compare Indie, AA and AA by its copies sold, revenue and rating and see what drove
 
-<img width="638" height="680" alt="image" src="https://github.com/user-attachments/assets/fd0c8bd5-57d1-4333-9e91-3040d02b4af5" />
 
-```
-Hey this is test
+
+```sql
+--MEDIAN OF COPIES SOLD AAA
+
+With "AllGames" AS (SELECT *
+, Row_number() OVER(Order by "Copies Sold" ASC) as "CopiesASC"
+, Row_number() OVER(Order by "Copies Sold" DESC) as "CopiesDESC"
+FROM "AllGames"
+
+ Where "Game Type" = 'AAA'
+ 
+)
+SELECT * FROM "AllGames"
+WHERE abs("CopiesASC" - "CopiesDESC") <= 1
+ORDER BY "Copies Sold"
+
+
+
+
+
+
+--MEDIAN OF REVENUE  AAA
+
+With "AllGames" AS (SELECT *
+, Row_number() OVER(Order by "Revenue" ASC) as "RevenueASC"
+, Row_number() OVER(Order by "Revenue" DESC) as "RevenueDESC"
+FROM "AllGames"
+
+ Where "Game Type" = 'AAA'
+ 
+)
+SELECT * FROM "AllGames"
+WHERE abs("RevenueASC" - "RevenueDESC") <= 1
+ORDER BY "Revenue"
+
 ```
 
 ### Q2: Which genres sell the most copies?  
