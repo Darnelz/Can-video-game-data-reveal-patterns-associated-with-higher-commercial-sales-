@@ -227,7 +227,8 @@ ORDER BY "Rating" DESC
 ```
 
 
-
+<details>
+<summary>View all 99 games</summary>
 | Rating | Genre | Revenue | Copies_Sold |
 |---:|---|---:|---:|
 | 4.90 | Casual | 26,495,000 | 5,300 |
@@ -330,6 +331,7 @@ ORDER BY "Rating" DESC
 | 2.40 | RPG | 297,500 | 15,000,000 |
 | 2.35 | Fighting | 8,028,540 | 485,000 |
 
+</details>
 
 
 
