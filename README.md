@@ -192,7 +192,8 @@ FROM
 LIMIT 10
 
 ```
-
+<details>
+<summary>View Table Query</summary>
 
 | Rating | Rating_Group | Game_Type | Revenue | Copies_Sold | Avg_Group_Rating | Total_Group_Revenue |
 |---:|---:|---|---:|---:|---:|---:|
@@ -207,7 +208,7 @@ LIMIT 10
 | 4.70 | 1 | Indie | 449,100 | 25,000 | 1,434,100 | 133,552,651 |
 | 4.70 | 1 | Indie | 2,648,940 | 106,000 | 1,434,100 | 133,552,651 |
 
-
+</details>
 
 
 ### Q4: Does game price affect how many copies are sold? 
