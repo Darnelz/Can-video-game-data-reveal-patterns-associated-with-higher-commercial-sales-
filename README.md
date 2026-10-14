@@ -67,7 +67,7 @@ SELECT Distinct "Genre" from "AllGames"
 ```
 I had to clean and replace typos before engaging within my queries
 
-### Q1: How does commercial performance differ between Indie, AA and AAA games? 
+## Q1: How does commercial performance differ between Indie, AA and AAA games? 
 
  
 My hope is to 
