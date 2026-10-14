@@ -106,6 +106,15 @@ ORDER BY "Revenue"
 
 ```
 
+## Median of Copies Sold
+
+| Game | Rating | Genre | Copies Sold | Revenue | The Cost | Game Type | Release Date | Platform | 
+|---|---|---|---|---|---|---|---|---|
+| 1 | Sonic Crossworlds | 4.65 | Racing | 1200000 | 32444500 |  64.99  | 2025-09-25 | PS4, PS5, Xbox, Switch 1, Switch 2, PC |
+
+
+
+
 ### Q2: Which genres sell the most copies?  
 The aim was to compare the total sales or average/median sales for each genre. 
 
