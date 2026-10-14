@@ -19,6 +19,8 @@ CSV
      → 
 📈 Tableau
 
+---
+
 
 ## 01 - How the Data was Gathered
 The aim is to gather as much data as I can in terms of games as it would be more time consuming if I handpicked each 90+ games 
