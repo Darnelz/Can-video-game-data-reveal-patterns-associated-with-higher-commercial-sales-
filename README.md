@@ -108,9 +108,9 @@ ORDER BY "Revenue"
 
 ## Median of Copies Sold
 
-|  | Game | Rating | Genre | Copies Sold | Revenue | The Cost | Game Type | Release Date | Platform | 
+| Game | Rating | Genre | Copies Sold | Revenue | The Cost | Game Type | Release Date | Platform | 
 |---|---|---|---|---|---|---|---|---|
-| 1 | Sonic Crossworlds | 4.65 | Racing | 1200000 | 32444500 |  64.99  | 2025-09-25 | PS4, PS5, Xbox, Switch 1, Switch 2, PC |
+| Sonic Crossworlds | 4.65 | Racing | 1200000 | 32444500 |  64.99  |  AAA  | 2025-09-25 | PS4, PS5, Xbox, Switch 1, Switch 2, PC |
 
 
 
