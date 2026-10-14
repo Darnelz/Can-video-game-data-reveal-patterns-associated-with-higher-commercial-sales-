@@ -106,7 +106,6 @@ ORDER BY "Revenue"
 
 ```
 
-## Median of Copies Sold
 
 | Game | Rating | Genre | Copies Sold | Revenue | The Cost | Game Type | Release Date | Platform | 
 |---|---|---|---|---|---|---|---|---|
@@ -130,9 +129,9 @@ from "AllGames"
 Group by "Genre"
 
 ```
-
-## TopGameGenre
-
+<details>
+<summary>View All Genres</summary>
+     
 | Genre | TopGameGenre | Total_Revenue | Average |
 |---|---:|---:|---:|
 | Sports | 3 | 13,710,780 | 4,570,260.00 |
@@ -161,6 +160,8 @@ Group by "Genre"
 | Platformer | 5 | 492,050,039 | 98,410,007.80 |
 | Simulation | 9 | 50,100,114,403 | 5,566,679,378.11 |
 | Casual | 8 | 170,043,150 | 21,255,393.75 |
+
+<details>
 
 
 
@@ -192,8 +193,6 @@ LIMIT 10
 
 ```
 
-
-## Rating → Copies Sold + Revenue 
 
 | Rating | Rating_Group | Game_Type | Revenue | Copies_Sold | Avg_Group_Rating | Total_Group_Revenue |
 |---:|---:|---|---:|---:|---:|---:|
