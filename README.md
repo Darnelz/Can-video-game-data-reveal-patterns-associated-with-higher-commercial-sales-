@@ -130,7 +130,7 @@ Group by "Genre"
 
 ```
 <details>
-<summary>View All Genres</summary>
+<summary>View Table Query</summary>
      
 | Genre | TopGameGenre | Total_Revenue | Average |
 |---|---:|---:|---:|
@@ -228,7 +228,7 @@ ORDER BY "Rating" DESC
 
 
 <details>
-<summary>View all 99 games</summary>
+<summary>View Table Query</summary>
      
 | Rating | Genre | Revenue | Copies_Sold |
 |---:|---|---:|---:|
@@ -357,7 +357,9 @@ ORDER BY MONTH ASC
 ```
 
 
-
+<details>
+<summary>View Table Query</summary>
+     
 | Rating_Group | Total_Revenue | Total_Copies_Sold | Game_Count |
 |---:|---:|---:|---:|
 | 1 | 76,575,520 | 809,300 | 5 |
@@ -372,7 +374,7 @@ ORDER BY MONTH ASC
 | 11 | 1,085,207,630 | 5,910,900 | 8 |
 | 12 | 137,291,950 | 3,762,400 | 7 |
 
-
+</details>
 
 → View SQL Queries
 
