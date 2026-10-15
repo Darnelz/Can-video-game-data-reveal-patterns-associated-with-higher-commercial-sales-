@@ -546,3 +546,15 @@ The findings suggest that release timing may be associated with commercial perfo
 
 
 Overall, May and September appear to be promising release windows. However due to seeing the rise in copies due to a best selling AAA game during October, Release timing alone cannot fully determine the commercial success such as factors such as Marketing, game quality and franchise recognition. A larger data set would determine whether these seasonal patters are consistent.
+
+
+## Conclusion
+
+
+The report suggested that AAA gamews dominate total sales, while genres such as shooters, action and platformers demonstrate strong commercial performance. Interestingly, higher ratings did not necessarily translate into higher sales, and some indie titles achieved substantial sales without requring AAA level investment.
+
+
+However the limitations included the small smaple size, uneven representation of game types and genre and the influence of blockbuster titles on total sales. These factors mean that the results indicate potential patterns rather than definitive conclusions about commercial success.
+
+
+To improve future analysis, I would expand the dataset, include more reliable financial and marketing information, and investigate additional factors such as franchise recognition, player engagement and development budgets. Overall, this project demonstrates how data analysis can identify commercial trends and potential opportunities while highlighting the importance of data quality, representative samples and cautious interpretation.
