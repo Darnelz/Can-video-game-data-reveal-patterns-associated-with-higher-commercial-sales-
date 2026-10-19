@@ -25,7 +25,7 @@ CSV
 ## 01 - How the Data was Gathered
 
 
-The aim is to gather as much data as I can in terms of games as it would be more time consuming if I handpicked each 90+ games 
+The aim first is to gather as much data as I can in terms of games by scraping a website using an api as it would be more time consuming if I  just handpicked 90+ games 
 
 <img width="470" height="414" alt="image" src="https://github.com/user-attachments/assets/cf69b9f3-845a-4249-b190-10d5f927293d" />
 
@@ -37,7 +37,7 @@ I started first by scraping information from RAWG which I then (in python) dug t
 
 
 
-I wanted the information I found to be transferred into excel so I can add more data efficiently so I I used my for loop, printing the following games as a list so I can separate it as commas in excel
+I wanted the information I found to be transferred into excel so I can add more data efficiently so I used my for loop, printing the following games as a list so I can separate it as commas in excel
 
 <img width="429" height="291.5" alt="Screenshot 2026-09-09 131837" src="https://github.com/user-attachments/assets/f2424e2d-f595-4c4d-848b-51a38d813208" />
 
@@ -65,8 +65,7 @@ I added Copies sold, Revenue and release date in the new data for more comparins
 ## 03 - SQL Analysis
 
 
-The Goal here is to Answer the question in form of SQL, underneath is the following which helped me calculate  how I figured out the question (bru idk)
-
+The Goal here is to Answer the questions in form of an SQL, underneath is the following which helped me calculate  how I figured out the question:
 
 
 Before hand I noticed there were alot of anomalies when checking 
@@ -117,7 +116,7 @@ ORDER BY "Revenue"
 
 ```
 
-I had to first double check the data to see if it was still messy and noticed again once I done a COUNT check for game types it was 4 rather than 3, I soon noticed when further investigating that it was the difference between 'indie' and 'Indie'. Once finished I then wrote out a MEDIAN code which could be distplayed per game type I could do this then to notice what is the middle value of the Game Type before it gets turned into a pie chart
+I had to first double check the data to see if it was still messy and noticed again once I done a COUNT check for game types it was 4 rather than 3, I soon noticed when further investigating that it was the difference between 'indie' and 'Indie'. Once finished I then wrote out a MEDIAN code which could be displayed per game type I could do this then to notice what is the middle value of the Game Type was before it gets turned into a pie chart.
 
 | Game | Rating | Genre | Copies Sold | Revenue | The Cost | Game Type | Release Date | Platform | 
 |---|---|---|---|---|---|---|---|---|
@@ -142,7 +141,7 @@ from "AllGames"
 Group by "Genre"
 
 ```
-This is a more noticeable easy query, only focusing on more aggregate functions all I only wanted to see what the maximum Sum and Average of the Revenue for each genre before being put into a bar chart.
+This is a more noticeable easy query, only focusing on more aggregate functions all I only wanted to see was what the maximum Sum and Average of the Revenue for each genre was before being inputted into a bar chart.
 <details>
 <summary>View Table Query</summary>
      
@@ -208,7 +207,7 @@ FROM
 
 ```
 
-The relationship I was trying to figure out was if higher ratings relate to higher copies sold, I wanted to group everything by its rating so then I can put in a table what rating gathers the most copies sold, by using a NTILES(10) to divide the amount of games I have in 10 roughly equal sized groups based on their ratings, while using  SUM() OVER (PARTITION BY "Group_Number") to calculate the total revenue and copies sold for each group while keeping individual game records visible for further comparison.
+The relationship I was trying to figure out was if higher ratings relate to higher copies sold, I wanted to group everything by its rating so then I can put in a table what rating gathers the most copies sold, by using a NTILES(10) to divide the amount of games I have in 10 roughly equal sized groups based on their ratings, while using  SUM() OVER (PARTITION BY "Group_Number") to calculate the total revenue and copies sold for each group while keeping individual game records visible for further comparisons.
 
 
 <details>
@@ -531,7 +530,7 @@ Q4: Does game price affect how many copies are sold?
 
 The following Scatterplot follows the relationship between copies sold and the cost of the games. The results suggest that the relationship between cost and commercial sales varies across categories offering insights into investment oppurtunity and potential risks. 
 
-AAA games show a postivie relationship between cost and copies sold, with some titles achieving exceptionally high sales however high investment does not guarentee comercial success in comparison to indie games where they show a gradual increase with some lower cost titles achieve sales as high or higher than some AAA games. This highlights the fact that smaller budget games can reach substantial audiences without requiring a same level of investment in comparinson to AAA titles. In contrast AA games display a negative trend suggesting that higher costs associated with lower sales within this dataset although further investigation is needed to establish  whether this pattern is meaningful.
+AAA games show a positive relationship between cost and copies sold, with some titles achieving exceptionally high sales however high investment does not guarentee comercial success in comparison to indie games where they show a gradual increashe with some lower cost titles achieve sales as high or higher than some AAA games. This highlights the fact that smaller budget games can reach substantial audiences without requiring a same level of investment in comparinson to AAA titles. In contrast AA games display a negative trend suggesting that higher costs associated with lower sales within this dataset although further investigation is needed to establish  whether this pattern is meaningful.
 
 
 These findings highlight potential investment oppurtunities across different categories. Publishers could balance AAA titles with lower cost indie projects as that is substantial for a wider audience, particually to players who are more price concious and may be less willing to purchase expensive releases. Investing in a broader range of afforable games could help not only expand your audience but generate more copies in the long run.
@@ -542,7 +541,7 @@ QUESTION 5
 
 <img width="992" height="801" alt="image" src="https://github.com/user-attachments/assets/17d77242-bd55-4775-914a-bb89a1baa897" />
 
-The findings suggest that release timing may be associated with commercial performance although patterns vary by game types.                                                                                                                                                                                                  Across the whole dataset, May and September show the most promising sales while October is recorded as the highest total sales, largely driven by one of the best selling AAA titles during this year which makes October a outlier rather than a reliable indicater of the the best release month. AAA titles performed strongly thoughout much of the year, AA titles peaked during May and Indie titles recorded their strongest sales in the later month represented within the data.                          
+The findings suggest that release timing may be associated with commercial performance although patterns vary by game types.                                                                                                                                                                                                  Across the whole dataset, May and September show the most promising sales while October is recorded as the highest total sales, largely driven by one of the best selling AAA titles during this year which makes October a outlier rather than a reliable indicater of the best release month. AAA titles performed strongly thoughout much of the year, AA titles peaked during May and Indie titles recorded their strongest sales in the later month represented within the data.                          
 
 
 Overall, May and September appear to be promising release windows. However due to seeing the rise in copies due to a best selling AAA game during October, Release timing alone cannot fully determine the commercial success such as factors such as Marketing, game quality and franchise recognition. A larger data set would determine whether these seasonal patters are consistent.
@@ -551,13 +550,18 @@ Overall, May and September appear to be promising release windows. However due t
 ## Conclusion
 
 
-The report suggested that AAA gamews dominate total sales, while genres such as shooters, action and platformers demonstrate strong commercial performance. Interestingly, higher ratings did not necessarily translate into higher sales, and some indie titles achieved substantial sales without requring AAA level investment.
+The report suggested that AAA games dominate total sales, while genres such as shooters, action and platformers demonstrate strong commercial performance. Interestingly, higher ratings did not necessarily translate into higher sales, and some indie titles achieved substantial sales without requring AAA level investment.
 
 
-However the limitations included the small smaple size, uneven representation of game types and genre and the influence of blockbuster titles on total sales. These factors mean that the results indicate potential patterns rather than definitive conclusions about commercial success.
+However the limitations included the small sample size, uneven representation of game types and genre and the influence of big titles on total sales. These factors mean that the results indicate potential patterns rather than definitive conclusions about commercial success.
 
 
 To improve future analysis, I would expand the dataset, include more reliable financial and marketing information, and investigate additional factors such as franchise recognition, player engagement and development budgets. Overall, this project demonstrates how data analysis can identify commercial trends and potential opportunities while highlighting the importance of data quality, representative samples and cautious interpretation.
 
 
 ## References
+[SensorTower (for copies and revenues)](https://app.sensortower.com/vgi/)
+[GameSensor (For copies and revenues sold)](https://gamesensor.info/)
+[RAWG (for API Scraping)](https://rawg.io/)
+[Steam (For Ratings, Genres and Platform)](https://store.steampowered.com/)
+[Metacritic (For Ratings)](https://www.metacritic.com/)
