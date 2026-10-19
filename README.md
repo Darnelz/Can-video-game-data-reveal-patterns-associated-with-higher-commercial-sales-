@@ -561,7 +561,15 @@ To improve future analysis, I would expand the dataset, include more reliable fi
 
 ## References
 [SensorTower (for copies and revenues)](https://app.sensortower.com/vgi/)
+
+
 [GameSensor (For copies and revenues sold)](https://gamesensor.info/)
+
+
 [RAWG (for API Scraping)](https://rawg.io/)
+
+
 [Steam (For Ratings, Genres and Platform)](https://store.steampowered.com/)
+
+
 [Metacritic (For Ratings)](https://www.metacritic.com/)
