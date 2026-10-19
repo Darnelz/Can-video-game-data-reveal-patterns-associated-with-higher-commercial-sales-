@@ -558,3 +558,6 @@ However the limitations included the small smaple size, uneven representation of
 
 
 To improve future analysis, I would expand the dataset, include more reliable financial and marketing information, and investigate additional factors such as franchise recognition, player engagement and development budgets. Overall, this project demonstrates how data analysis can identify commercial trends and potential opportunities while highlighting the importance of data quality, representative samples and cautious interpretation.
+
+
+## References
